@@ -1,0 +1,5 @@
+language: node_js
+# The following are the default, but explicit is better.
+install: npm install
+script: npm test
+sudo: false
