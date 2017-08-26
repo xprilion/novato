@@ -32,6 +32,20 @@
             <wb-workbox>
                 <sidebar>
                     <wb-search></wb-search>
+                    <wb-accordion class="machine">
+                        <header>
+                            <img class="cat-icon" src="images/icon/control.svg"> ML
+                        </header>
+                        <p>Machine Learning Blocks</p>
+
+                        <wb-expression type="dataset" ns="machine" fn="getDataset">
+                            <wb-value type="list" allow="literal" options="MNIST, iris, XOR" value="XOR">dataset</wb-value>
+                        </wb-expression>
+                        
+                    </wb-accordion>
+
+
+
                     <wb-accordion class="control">
                         <header>
                             <img class="cat-icon" src="images/icon/control.svg"> Controls

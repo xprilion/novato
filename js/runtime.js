@@ -432,6 +432,16 @@
             },
         },
 
+        machine: {
+            // ML functions go here
+
+            getDataset: function(file) {
+                var dataset = ajax.gets("mlscripts/getDataset.php");
+                return dataset;
+            }
+
+        },
+
 
         /*
          * The underlying JavaScript object is the same object that is passed
