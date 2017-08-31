@@ -28,6 +28,7 @@
                 <button class="undo" id="undoButton" title="Ctrl-Z or ⌘-Z">Undo</button>
                 <button class="redo" id="redoButton" title="Ctrl-Y or ⌘-Shift-Z">Redo</button>
                 <button class="open-example">Examples</button>
+                <input id="fileupload" type="file" name="files[]" data-url="datasets/index.php" multiple>
             </div>
             <wb-workbox>
                 <sidebar>
@@ -1192,6 +1193,20 @@
     <script src="js/app.js"></script>
     <script src="js/file.js"></script>
     <script src="js/queryparams.js"></script>
+    <script src="js/jquery.iframe-transport.js"></script>
+    <script src="js/jquery.fileupload.js"></script>
+    <script>
+        $(function () {
+            $('#fileupload').fileupload({
+                dataType: 'json',
+                done: function (e, data) {
+                    $.each(data.result.files, function (index, file) {
+                        $('<p/>').text(file.name).appendTo(document.body);
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
