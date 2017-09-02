@@ -25,8 +25,10 @@ y = np.sin(X).ravel()
 y[::5] += 3 * (0.5 - rng.rand(16))
 
 # Fit regression model
-precision = int(inputs[1])
-# precision = 3
+
+
+# precision = int(inputs[0])
+precision = 3
 regr_2 = DecisionTreeRegressor(max_depth = precision)
 '''regr_1.fit(X, y)'''
 regr_2.fit(X, y)
