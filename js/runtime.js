@@ -4,6 +4,8 @@
     var fileData = [];
     var issetFileData = 0;
 
+    var dataset = "";
+
     // Dependencies: ctx, canvas, Event, runtime
     // canvas/stage stuff
     var _canvas, _ctx;
