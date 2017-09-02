@@ -169,7 +169,7 @@ sidebar.trashcan:after {
     left: 0;
     top: 0;
     background-repeat: no-repeat;
-    background-image: url("../images/icon/recycle.svg");
+    background-image: url("../images/icon/trash1.svg");
     background-size: contain;
     background-position: 50%;
     z-index: 100;
