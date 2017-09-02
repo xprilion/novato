@@ -1,7 +1,7 @@
 import numpy as np 
 import matplotlib.pyplot as plt 
 from sklearn.svm import SVR 
-import sys
+ 
 np.random.seed(0) 
 X = np.sort(5 * np.random.rand(40, 1), axis=0) 
 T = np.linspace(0, 5, 500)[:, np.newaxis] 
