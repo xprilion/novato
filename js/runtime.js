@@ -1,6 +1,9 @@
 (function(global) {
     'use strict';
 
+    var fileData = [];
+    var issetFileData = 0;
+
     // Dependencies: ctx, canvas, Event, runtime
     // canvas/stage stuff
     var _canvas, _ctx;
@@ -439,15 +442,40 @@
                 var res = ajax.gets("mlscripts/getDataset.php");
                 return res;
             },
+      
+            decisionTreeRegression: function(a) {
+                console.log(a);
+                issetFileData = 0;
+                $.post("mlscripts/decisionTreeRegression.php", {arg1: a}, function(res){
+                    //$('wb-playground').empty().append('<img src="mlscripts/'+res+'" style="width: 100%;" />');
+                    console.log(res);
+                    issetFileData=1;
+                    fileData = res;
+                    return res;
+                });
+            },
 
-            decisionTreeRegression: function(item) {
-                //console.log(a);
-                var res = ajax.gets("mlscripts/decisionTreeRegression.php");
+            displayImage: function(item){
 
-                $('wb-playground').empty().append('<img src="mlscripts/'+res+'" style="width: 100%;" />');
-                return res;
+                var check = function(){
+                    if(typeof item == 'undefined'){
+                        if(issetFileData!=1){
+                            console.log("Waiting for fileData");
+                            //console.log(fileData);
+                            window.setTimeout(function(){check()}, 1000);
+                            return;
+                        }
+                        else{
+                            console.log("Found File data!");
+                            item = fileData;
+                            $('wb-playground').empty().append('<img src="mlscripts/'+item+'" style="width: 100%;" />');
+                            
+                            issetFileData = 0;
+                        }
+                    }
+                }
 
-
+                check();
             }
 
         },
