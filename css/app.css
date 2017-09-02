@@ -70,8 +70,8 @@ body > output {
 .do-stop {
     background-color: #666666;
     color: #FFFFFF;
-    border-radius: 0px;
-    border: 1px #111111 outset;
+    border-radius: 5px;
+    border: 2px #111111 outset;
     margin: 3px;
     font-size: 18px;
 }

@@ -4,22 +4,6 @@ from sklearn.datasets import load_diabetes
 from sklearn import linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 
-plt.ioff()
-
-import sys
-import string
-import random
-import time
-
-inputs = sys.argv
-
-# print(inputs)
-
-# INPUTS: none
-
-# OUTPUTS: imageFile
-
-
 # Load the diabetes dataset
 dataset = load_diabetes()
 
@@ -58,9 +42,4 @@ plt.plot(dataset_X_test, dataset_y_pred, color='blue', linewidth=3)
 plt.xticks(())
 plt.yticks(())
 
-fname = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
-fname = ''.join(map(str, ['figs/', fname, time.time(), '.png']))
-
-plt.savefig(fname, bbox_inches='tight')
-
-print(fname)
+plt.show()
