@@ -436,8 +436,18 @@
             // ML functions go here
 
             getDataset: function(file) {
-                var dataset = ajax.gets("mlscripts/getDataset.php");
-                return dataset;
+                var res = ajax.gets("mlscripts/getDataset.php");
+                return res;
+            },
+
+            decisionTreeRegression: function(item) {
+                //console.log(a);
+                var res = ajax.gets("mlscripts/decisionTreeRegression.php");
+
+                $('wb-playground').empty().append('<img src="mlscripts/'+res+'" style="width: 100%;" />');
+                return res;
+
+
             }
 
         },
