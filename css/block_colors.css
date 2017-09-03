@@ -2,6 +2,18 @@
  * while dragging, highlighting drop-targets, and
  * highlighting selected blocks.
  */
+[ns="Machine Learning"],
+.block-dragging [ns="Machine Learning"].drop-target,
+.block-dragging [ns="Machine Learning"].drop-target.selected-block {
+    background-color: hsl(180, 50%, 50%);
+    border-color: hsl(180, 50%, 30%);
+}
+
+.block-dragging [ns="Machine Learning"],
+.block-dragging [ns="Machine Learning"].selected-block {
+    background-color: hsl(180, 50%, 75%);
+    border-color: hsl(180, 50%, 60%);
+}
 
 [ns="control"],
 .block-dragging [ns="control"].drop-target,

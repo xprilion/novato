@@ -223,6 +223,11 @@ wb-value > input {
     background: #FFFFFF no-repeat 3px 3px;
 }
 
+wb-value[type*=number] > input {
+    background-image: url(../images/icon/machine.svg);
+    
+}
+
 wb-value[type=any] >input {
     background-image: url(../images/icon/control.svg);
 }
