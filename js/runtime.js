@@ -463,6 +463,67 @@
                     fileData = res;
                     return res;
                 });
+
+            },
+
+            LinearSupportVectorRegression: function(b) {
+                console.log(b);
+                issetFileData = 0;
+                $.post("mlscripts/LinearSupportVectorRegression.php", {arg1: b}, function(res){
+                    //$('wb-playground').empty().append('<img src="mlscripts/'+res+'" style="width: 100%;" />');
+                    console.log(res);
+                    issetFileData=1;
+                    fileData = res;
+                    return res;
+                });
+            },
+
+            radialBasisFunctionModelSVM: function(c) {
+                console.log(c);
+                issetFileData = 0;
+                $.post("mlscripts/radialBasisFunctionModelSVM.php", {arg1: c}, function(res){
+                    //$('wb-playground').empty().append('<img src="mlscripts/'+res+'" style="width: 100%;" />');
+                    console.log(res);
+                    issetFileData=1;
+                    fileData = res;
+                    return res;
+                });
+            },
+
+            nearestNeighbourRegression: function(d) {
+                console.log(d);
+                issetFileData = 0;
+                $.post("mlscripts/nearestNeighbourRegression.php", {arg1: d}, function(res){
+                    //$('wb-playground').empty().append('<img src="mlscripts/'+res+'" style="width: 100%;" />');
+                    console.log(res);
+                    issetFileData=1;
+                    fileData = res;
+                    return res;
+                });
+            },
+
+            PolynomialSupportVectorRegression: function(e) {
+                console.log(e);
+                issetFileData = 0;
+                $.post("mlscripts/PolynomialSupportVectorRegression.php", {arg1: e}, function(res){
+                    //$('wb-playground').empty().append('<img src="mlscripts/'+res+'" style="width: 100%;" />');
+                    console.log(res);
+                    issetFileData=1;
+                    fileData = res;
+                    return res;
+                });
+            },
+
+            regression3: function(f) {
+                console.log(f);
+                issetFileData = 0;
+                $.post("mlscripts/regression3.php", {arg1: f}, function(res){
+                    //$('wb-playground').empty().append('<img src="mlscripts/'+res+'" style="width: 100%;" />');
+                    console.log(res);
+                    issetFileData=1;
+                    fileData = res;
+                    return res;
+                });
             },
 
             displayImage: function(item){
