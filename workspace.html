@@ -45,17 +45,17 @@
 
                         <wb-expression type="dataset" ns="machine" fn="getDataset">
                             <wb-value type="list" allow="literal" options="MNIST, iris, XOR" value="XOR">dataset</wb-value>
-                            <div class = 'infobutton'>i</div>
+                            <div class = 'infobutton' infoff="dataset">i</div>
                         </wb-expression>
 
                         <wb-expression type="algo" ns="machine" fn="decisionTreeRegression">
                             <wb-value type="number" value="3">Decision Tree Regression | n = </wb-value>
-                            <div class = 'infobutton'>i</div>
+                            <div class = 'infobutton' infoff="decisionTreeRegression">i</div>
                         </wb-expression>
 
                         <wb-step type="graph" ns="machine" fn="displayImage">
                             <wb-value type="any">Display Graph</wb-value>
-                            <div class = 'infobutton'>i</div>
+                            <div class = 'infobutton' infoff="Display Graph">i</div>
                         </wb-step>
                         
                     </wb-accordion>
