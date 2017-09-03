@@ -89,8 +89,8 @@
                         <header>
                             <img class="cat-icon" src="images/icon/control.svg"> Controls
                         </header>
-                        <p>Contains flow control, messaging, looping, variables, and conditionals.</p>
-                        <wb-context ns="control" toplevel="true" fn="eachFrame">
+                        <p>Contains flow control, looping, variables, and conditionals</p>
+                        <!-- <wb-context ns="control" toplevel="true" fn="eachFrame">
                             <wb-row>
                                 <wb-value>each frame</wb-value>
                             </wb-row>
@@ -106,7 +106,7 @@
                                     </wb-expression>
                                 </wb-local>
                             </wb-row>
-                        </wb-context>
+                        </wb-context> -->
                         <wb-step ns="control" fn="setVariable" specialform>
                             <wb-row>
                                 <wb-value>set</wb-value>
@@ -142,7 +142,7 @@
                                 </wb-local>
                             </wb-row>
                         </wb-context>
-                        <wb-step ns="control" fn="broadcast">
+                        <!-- <wb-step ns="control" fn="broadcast">
                             <wb-value type="text">broadcast</wb-value>
                             <wb-value type="any" optional="true">message with data</wb-value>
                         </wb-step>
@@ -158,7 +158,7 @@
                                     </wb-expression>
                                 </wb-local>
                             </wb-row>
-                        </wb-context>
+                        </wb-context> -->
                         <wb-context ns="control" fn="if">
                             <wb-value type="boolean" value="true">if</wb-value>
                         </wb-context>
