@@ -39,9 +39,9 @@
                     <wb-search></wb-search>
                     <wb-accordion class="machine">
                         <header>
-                            <img class="cat-icon" src="images/icon/star.svg"> ML
+                            <img class="cat-icon" src="images/icon/machine.svg"> Machine Learning
                         </header>
-                        <p>Contain datasets, rest coming soon</p>
+                        <p>Contain datasets and training models, rest coming soon</p>
 
                         <wb-expression type="dataset" ns="machine" fn="getDataset">
                             <wb-value type="list" allow="literal" options="MNIST, iris, XOR" value="XOR">dataset</wb-value>
@@ -52,6 +52,28 @@
                             <wb-value type="number" value="3">Decision Tree Regression | n = </wb-value>
                             <div class = 'infobutton' infoff="decisionTreeRegression">i</div>
                         </wb-expression>
+
+                        <wb-expression type="algo" ns="machine" fn="LinearSupportVectorRegression">
+                            <wb-value type="number" value="3">Linear Support Vector Regression | n = </wb-value>
+                        </wb-expression>
+
+                        <wb-expression type="algo" ns="machine" fn="radialBasisFunctionModelSVM">
+                            <wb-value type="number" value="3">Radial Function Model | n = </wb-value>
+                        </wb-expression>
+
+                        <wb-expression type="algo" ns="machine" fn="nearestNeighbourRegression">
+                            <wb-value type="number" value="3">Nearest Neighbour Regression | n = </wb-value>
+                        </wb-expression>
+
+                        <wb-expression type="algo" ns="machine" fn="PolynomialSupportVectorRegression">
+                            <wb-value type="number" value="3">Polynomial Support Vector Regression | n = </wb-value>
+                        </wb-expression>
+
+
+                        <wb-expression type="algo" ns="machine" fn="regression3">
+                            <wb-value type="number" value="3">Regression | n = </wb-value>
+                        </wb-expression>
+
 
                         <wb-step type="graph" ns="machine" fn="displayImage">
                             <wb-value type="any">Display Graph</wb-value>
@@ -180,7 +202,7 @@
                 </sidebar>
                 <wb-splitter></wb-splitter>
                 <wb-workspace>
-                    <header style = "color:blue"><i><center>WorkStation</center></i></header>
+                    <header style = "font-weight:bold;color:purple"><i><center>WORK STATION</center></i></header>
                     <wb-contains></wb-contains>
                 </wb-workspace>
             </wb-workbox>
