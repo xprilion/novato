@@ -1,0 +1,10 @@
+Support vector machines (SVMs) are supervised learning models with associated learning algorithms that analyze data used for classification and regression analysis.
+
+what is Supervised Learning?
+In supervised learning, each example is a pair consisting of an input object and a desired output value. 
+A supervised learning algorithm analyzes the training data and produces an inferred function, which can be used for mapping new examples.
+
+Goal:
+polynomial regression is a form of regression analysis in which the relationship between the independent variable x and the dependent variable y is modelled as an nth degree polynomial in x. 
+Polynomial regression fits a nonlinear relationship between the value of x and the corresponding conditional mean of y, denoted E(y |x), where E is some function.
+This is used to describe nonlinear phenomena such as the growth rate of tissues.
