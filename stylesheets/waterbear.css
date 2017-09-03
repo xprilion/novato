@@ -381,3 +381,15 @@ section{
 .ico.ico-twitter:before{ content: url(../images/landing/twitter.svg) }
 .ico.ico-mailing-list:before{ content: url(../images/landing/email.svg) }
 .ico.ico-blog:before{ content: url(../images/landing/external.svg) }
+
+
+.infobutton{
+    background: #f00;
+    padding: 10.5px;
+    display: inline-block;
+    line-height: 4px;
+    position: absolute;
+    margin-top: -22.6px;
+    right: -22.6px;
+
+}

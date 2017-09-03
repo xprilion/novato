@@ -458,8 +458,6 @@
 
             },
 
-
-
             LinearSupportVectorRegression: function(b) {
                 console.log(b);
                 issetFileData = 0;
@@ -471,8 +469,6 @@
                     return res;
                 });
             },
-
-
 
             radialBasisFunctionModelSVM: function(c) {
                 console.log(c);
@@ -486,12 +482,10 @@
                 });
             },
 
-
-
-            nearest_neighbour_regression: function(d) {
+            nearestNeighbourRegression: function(d) {
                 console.log(d);
                 issetFileData = 0;
-                $.post("mlscripts/nearest_neighbour_regression.php", {arg1: d}, function(res){
+                $.post("mlscripts/nearestNeighbourRegression.php", {arg1: d}, function(res){
                     //$('wb-playground').empty().append('<img src="mlscripts/'+res+'" style="width: 100%;" />');
                     console.log(res);
                     issetFileData=1;
@@ -523,7 +517,6 @@
                     return res;
                 });
             },
-
 
             displayImage: function(item){
 

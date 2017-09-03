@@ -37,8 +37,7 @@ plt.scatter(X, y, c='k', label='data')
 plt.plot(T, y_, c='g', label='prediction')
 plt.axis('tight')
 plt.legend()
-plt.title("KNeighborsRegressor (k = %i, weights = '%s')" % (n_neighbors,
-weights))
+plt.title("KNeighborsRegressor (k = %i, weights = '%s')" % (n_neighbors,weights))
 
 fname = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
 fname = ''.join(map(str, ['figs/', fname, time.time(), '.png']))
@@ -46,8 +45,3 @@ fname = ''.join(map(str, ['figs/', fname, time.time(), '.png']))
 plt.savefig(fname, bbox_inches='tight')
 
 print(fname)
-
-
-
-
-
