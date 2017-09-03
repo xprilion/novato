@@ -391,5 +391,8 @@ section{
     position: absolute;
     margin-top: -22.6px;
     right: -22.6px;
+}
 
+.infobutton:hover{
+    background: #ff0;
 }

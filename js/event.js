@@ -361,6 +361,8 @@
         };
         Event.distancePointerMoved = 0;
         forward(dragTarget, 'drag-init', evt);
+        var elem = dragTarget.getElementsByClassName('infobutton');
+        console.log(elem[0].getAttribute('infoff'));
     }
 
     function startDrag(evt) {
