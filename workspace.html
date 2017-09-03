@@ -29,7 +29,7 @@
                 <button class="open-files">File</button>
                 <button class="undo" id="undoButton" title="Ctrl-Z or ⌘-Z">Undo</button>
                 <button class="redo" id="redoButton" title="Ctrl-Y or ⌘-Shift-Z">Redo</button>
-                <button class="open-example">Examples</button>
+               <!--  <button class="open-example">Examples</button> -->
                 <input id="fileupload" type="file" name="files[]" data-url="datasets/index.php" multiple>
             </div>
             <wb-workbox>
@@ -57,7 +57,7 @@
                             <wb-value type="number" value="3">Radial Function Model | n = </wb-value>
                         </wb-expression>
 
-                        <wb-expression type="algo" ns="machine" fn="nearest_neighbour_regression">
+                        <wb-expression type="algo" ns="machine" fn="nearestNeighbourRegression">
                             <wb-value type="number" value="3">Nearest Neighbour Regression | n = </wb-value>
                         </wb-expression>
 
