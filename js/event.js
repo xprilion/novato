@@ -363,7 +363,12 @@
         forward(dragTarget, 'drag-init', evt);
         try{
             var elem = dragTarget.getElementsByClassName('infobutton');
-            console.log(elem[0].getAttribute('infoff'));
+            var data = elem[0].getAttribute('infoff');
+            console.log(data);
+            $.get("infoModelText/"+data+".html", function( res ) {
+              $('wb-playground').empty().append(res).css('overflow-y', 'auto');
+            });
+            
         }
         catch(e){
 
