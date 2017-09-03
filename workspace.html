@@ -44,39 +44,44 @@
 
                         <wb-expression type="dataset" ns="machine" fn="getDataset">
                             <wb-value type="list" allow="literal" options="MNIST, iris, XOR" value="XOR">dataset</wb-value>
-                            <div class = 'infobutton'>i</div>
+                            <div class = 'infobutton' infoff="dataset">i</div>
                         </wb-expression>
 
                         <wb-expression type="algo" ns="machine" fn="decisionTreeRegression">
                             <wb-value type="number" value="3">Decision Tree Regression | n = </wb-value>
-                            <div class = 'infobutton'>i</div>
+                            <div class = 'infobutton' infoff="decisionTreeRegression">i</div>
                         </wb-expression>
 
                         <wb-expression type="algo" ns="machine" fn="LinearSupportVectorRegression">
                             <wb-value type="number" value="3">Linear Support Vector Regression | n = </wb-value>
+                            <div class = 'infobutton' infoff="LinearSupportVectorRegression">i</div>
                         </wb-expression>
 
                         <wb-expression type="algo" ns="machine" fn="radialBasisFunctionModelSVM">
                             <wb-value type="number" value="3">Radial Function Model | n = </wb-value>
+                            <div class = 'infobutton' infoff="radialBasisFunctionModelSVM">i</div>
                         </wb-expression>
 
                         <wb-expression type="algo" ns="machine" fn="nearestNeighbourRegression">
                             <wb-value type="number" value="3">Nearest Neighbour Regression | n = </wb-value>
+                            <div class = 'infobutton' infoff="nearestNeighbourRegression">i</div>
                         </wb-expression>
 
                         <wb-expression type="algo" ns="machine" fn="PolynomialSupportVectorRegression">
                             <wb-value type="number" value="3">Polynomial Support Vector Regression | n = </wb-value>
+                            <div class = 'infobutton' infoff="PolynomialSupportVectorRegression">i</div>
                         </wb-expression>
 
 
                         <wb-expression type="algo" ns="machine" fn="regression3">
                             <wb-value type="number" value="3">Regression | n = </wb-value>
+                            <div class = 'infobutton' infoff="regression3">i</div>
                         </wb-expression>
 
 
                         <wb-step type="graph" ns="machine" fn="displayImage">
                             <wb-value type="any">Display Graph</wb-value>
-                            <div class = 'infobutton'>i</div>
+                            <div class = 'infobutton' infoff="Display Graph">i</div>
                         </wb-step>
                         
                     </wb-accordion>
