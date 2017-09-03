@@ -386,7 +386,7 @@ section{
 .infobutton{
     background: #f00;
     padding: 10.5px;
-    display: inline-block;
+    display: none;
     line-height: 4px;
     position: absolute;
     margin-top: -22.6px;
