@@ -1,6 +1,13 @@
-import numpy as np
+import sys
+from pathlib import Path
 
-filename = "../datasets/xor.csv"
-a = np.loadtxt(open(filename, "rb"), delimiter=",")
+inputs = sys.argv
 
-print(a.shape)
+if not inputs[-1]=='nofile':
+	fname = inputs[-1]
+
+	dfile = Path("../datasets/"+fname)
+	if my_file.is_file():
+		print(fname)
+	else:
+		print("error")
