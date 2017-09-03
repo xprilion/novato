@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <title>Scratch4ML</title>
+    <link rel="stylesheet" href="stylesheets/waterbear.css">
     <link rel="stylesheet" href="lib/reset.css">
     <link rel="stylesheet" href="lib/notiFire.css">
     <link rel="stylesheet" href="css/widget.css">
@@ -14,7 +15,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.ui.widget.js"></script>
     <script src="lib/prefixfree.min.js"></script>
-  <!--   <script src="lib/ga.js"></script> -->
+    <script src="lib/ga.js"></script>
 </head>
 
 <body>
@@ -29,6 +30,7 @@
                 <button class="open-files">File</button>
                 <button class="undo" id="undoButton" title="Ctrl-Z or ⌘-Z">Undo</button>
                 <button class="redo" id="redoButton" title="Ctrl-Y or ⌘-Shift-Z">Redo</button>
+
                <!--  <button class="open-example">Examples</button> -->
                 <input id="fileupload" type="file" name="files[]" data-url="datasets/index.php" multiple>
             </div>
@@ -43,10 +45,12 @@
 
                         <wb-expression type="dataset" ns="machine" fn="getDataset">
                             <wb-value type="list" allow="literal" options="MNIST, iris, XOR" value="XOR">dataset</wb-value>
+                            <div class = 'infobutton'>i</div>
                         </wb-expression>
 
                         <wb-expression type="algo" ns="machine" fn="decisionTreeRegression">
                             <wb-value type="number" value="3">Decision Tree Regression | n = </wb-value>
+                            <div class = 'infobutton'>i</div>
                         </wb-expression>
 
                         <wb-expression type="algo" ns="machine" fn="LinearSupportVectorRegression">
@@ -73,6 +77,7 @@
 
                         <wb-step type="graph" ns="machine" fn="displayImage">
                             <wb-value type="any">Display Graph</wb-value>
+                            <div class = 'infobutton'>i</div>
                         </wb-step>
                         
                     </wb-accordion>
@@ -119,6 +124,7 @@
                         <wb-context ns="control" fn="loopOver">
                             <wb-row>
                                 <wb-value type="any">loop over</wb-value>
+
                             </wb-row>
                             <wb-row>
                                 <wb-local renameable="true">
