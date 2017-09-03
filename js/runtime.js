@@ -5,7 +5,6 @@
     var issetFileData = 0;
 
     var dataset = "";
-    var issetDataset = 0;
 
     // Dependencies: ctx, canvas, Event, runtime
     // canvas/stage stuff
@@ -442,15 +441,8 @@
             // ML functions go here
 
             getDataset: function(file) {
-                issetDataset = 0;
-                dataset = "";
-                $.post("mlscripts/getDataset.php", {arg1: file}, function(res){
-                    console.log(res);
-                    if(dataset!='error'){
-                        issetDataset=1;
-                        dataset = res;
-                    }
-                });
+                var res = ajax.gets("mlscripts/getDataset.php");
+                return res;
             },
       
             decisionTreeRegression: function(a) {
